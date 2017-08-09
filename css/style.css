@@ -1,0 +1,118 @@
+/*For demonstration*/
+a {margin-bottom: 40px;}
+/*end For demonstration*/
+
+/*Buttons*/
+.button {
+    display: inline-block;
+    height: 35.5px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 4px solid #d0f7d9;
+    border-radius: 50px;
+    background-color: #5bb1a7;
+    font: 400 18px/27.5px KRL, serif!important;
+    color: #fff!important;
+    text-align: center;
+    text-decoration: none!important;
+    cursor: pointer;
+    transition: all .3s!important;
+}
+.button:hover {
+    color: #5bb1a7!important;
+    background-color: #fff;
+}
+.button_gradient {
+    background: linear-gradient(to bottom, rgba(71, 169, 158, 1) 0%, rgba(152, 210, 199, 1) 50%, rgba(152, 210, 199, 1) 50%, rgba(71, 169, 158, 1) 50%, rgba(71, 169, 158, 1) 100%);
+}
+.button_gradient:hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(208, 247, 217, 1) 50%, rgba(208, 247, 217, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+.button_decorated {
+    position: relative;
+    margin-left: 63px;
+    margin-right: 63px;
+}
+.button_decorated:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 9px 10px;
+    background: linear-gradient(to bottom, rgba(184, 186, 189, .2) 0%, rgba(161, 168, 177, .6) .8px, rgba(184, 186, 189, 1) 1px, rgba(255, 255, 255, 1) 2.2px, rgba(123, 153, 193, 1) 3.7px, rgba(82, 106, 113, .7) 4px, rgba(82, 106, 113, 1) 7px, rgba(82, 106, 113, 1) 36.8px, rgba(82, 106, 113, .7) 39.8px, rgba(123, 153, 193, 1) 40.1px, rgba(130, 156, 187, .2) 41.8px, rgba(130, 156, 187, 1) 43.6px, rgba(184, 186, 189, .2) 44.8px, rgba(255, 255, 255, 1) 44.9px);
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    z-index: -2;
+}
+.button_decorated:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 66px;
+    background: url(http://kompunet.ru/img/sprites.png) left -9.85px no-repeat, url(../img/sprites.png) right -61.9px no-repeat;
+    position: absolute;
+    top: -12px;
+    left: -66px;
+    z-index: -1;
+}
+.button__decoration {
+    position: relative;
+}
+.button__decoration:before,
+.button__decoration:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: url(../img/sprites.png) left top no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    z-index: 2;
+}
+.button__decoration:before {
+    background-position: left -.5px;
+    top: -14px;
+}
+.button__decoration:after {
+    bottom: -16px;
+}
+.button_stylized {
+    min-width: 169.695px;
+    max-width: 490px;
+    position: relative;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.button_stylized:before {
+    content: "";
+    display: block;
+    width: 86%;
+    height: 100%;
+    padding: 12px 0px;
+    background: url(../img/sprites.png) left -215px repeat-x;
+    position: absolute;
+    top: -12px;
+    left: 6%;
+}
+.button_stylized:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 33px;
+    background: url(../img/sprites.png) left -113.85px no-repeat, url(../img/sprites.png) right -163.9px no-repeat;
+    position: absolute;
+    top: -12px;
+    left: -33px;
+}
+.button_hidden {
+    filter: opacity(.5);
+}
+.button_hidden:hover {
+    filter: opacity(1);
+}
+/*end Buttons*/
